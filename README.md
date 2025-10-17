@@ -39,13 +39,13 @@ This project implements a testable profile card component with semantic HTML, mo
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/profile-card.git
+   git clone https://github.com/yourusername/Damola-s-HNG-stage0task.git
    cd profile-card
    ```
 
 2. **Open the file**
 
-   Simply open `profile-card.html` in your web browser:
+   Simply open `index.html` in your web browser:
 
    **Option A: Double-click**
 
@@ -81,9 +81,9 @@ That's it! No npm install, no build process, no configuration needed. 🎉
 ## 📁 Project Structure
 
 ```
-profile-card/
+HNGstag0task/
 │
-├── profile-card.html          # Main HTML file (includes CSS and JS)
+├── index.html          # Main HTML file (includes CSS and JS)
 └── README.md                  # Project documentation
 ```
 
@@ -221,10 +221,9 @@ This project is open source and available for educational purposes.
 
 ## 👤 Author
 
-**Sophie Bennett**
+**Adedamola Ayesoro**
 
-- Role: Product Designer
-- Focus: Simplicity & Usability
+- Role: Frontend Developer
 
 ## 🤝 Contributing
 
