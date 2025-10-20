@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNG stage0 task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="profile-card.html" class="active">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <article data-testid="test-profile-card">
+      <header>
+        <figure>
+          <img
+            src="Adedamola.png"
+            alt="Adedamola Ayesoro profile photo"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <h2 data-testid="test-user-name">
+          Adedamola Ayesoro
+          <span class="verified-badge" aria-label="Verified">✓</span>
+        </h2>
+
+        <p data-testid="test-user-bio">Frontend Developer</p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-icon"
+              ><img src="followers.svg" alt="followers" aria-label="followers"
+            /></span>
+            <span>300</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon"
+              ><img src="projects.svg" alt="projects" aria-label="projects"
+            /></span>
+            <span>48</span>
+          </div>
+        </div>
+
+        <button class="follow-btn" aria-label="Follow Adedamola Ayesoro">
+          Follow
+          <span>+</span>
+        </button>
+      </header>
+
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Photography</li>
+          <li>Traveling</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Poor UX</li>
+          <li>Bugs</li>
+        </ul>
+      </section>
+
+      <nav data-testid="test-user-social-links" aria-label="Social media links">
+        <ul>
+          <li>
+            <a
+              href="https://x.com/AdeDml26"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              aria-label="Twitter profile"
+            >
+              <img src="x.svg" alt="Twitter" aria-label="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Baoku26"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              aria-label="GitHub profile"
+            >
+              <img src="github.svg" alt="github" aria-label="github" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://linkedin.com/in/ayesoro-adedamola-13659b384"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              aria-label="LinkedIn profile"
+            >
+              <img src="linkedin.svg" alt="linkedin" aria-label="linkedin" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="time-display">
+        Current time:
+        <span data-testid="test-user-time" id="currentTime"></span>ms
+      </div>
+    </article>
+
+    <script src="app.js"></script>
+  </body>
+</html>

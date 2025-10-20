@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Adedamola Ayesoro</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: #1a1a1a;
+        color: #ffffff;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      /* Navigation */
+      nav.main-nav {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        background: #2a2a2a;
+        border-radius: 12px;
+        padding: 16px;
+      }
+
+      nav.main-nav ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav.main-nav a {
+        color: #b0b0b0;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: all 0.2s;
+      }
+
+      nav.main-nav a:hover {
+        background: #3a3a3a;
+        color: #ffffff;
+      }
+
+      nav.main-nav a:focus {
+        outline: 2px solid #00c853;
+        outline-offset: 2px;
+      }
+
+      nav.main-nav a.active {
+        background: #00c853;
+        color: #ffffff;
+      }
+
+      /* Main Container */
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #2a2a2a;
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+        color: #ffffff;
+      }
+
+      .intro-text {
+        color: #b0b0b0;
+        margin-bottom: 40px;
+        line-height: 1.6;
+        font-size: 18px;
+      }
+
+      /* Section Styles */
+      section {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #3a3a3a;
+      }
+
+      section:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+        color: #00c853;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      h2::before {
+        content: "";
+        width: 4px;
+        height: 24px;
+        background: #00c853;
+        border-radius: 2px;
+      }
+
+      p {
+        color: #d0d0d0;
+        line-height: 1.8;
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+
+      ul {
+        list-style: none;
+        margin-top: 16px;
+      }
+
+      ul li {
+        color: #d0d0d0;
+        padding: 12px 16px;
+        margin-bottom: 8px;
+        background: #3a3a3a;
+        border-radius: 8px;
+        border-left: 3px solid #00c853;
+        line-height: 1.6;
+      }
+
+      /* ul li::before {
+        content: "→";
+        color: #00c853;
+        font-weight: bold;
+        margin-right: 12px;
+      } */
+
+      /* Highlight Box */
+      .highlight-box {
+        background: linear-gradient(135deg, #00c853 0%, #00e676 100%);
+        padding: 24px;
+        border-radius: 12px;
+        color: #ffffff;
+        margin-top: 16px;
+      }
+
+      .highlight-box p {
+        color: #ffffff;
+        font-style: italic;
+        font-size: 17px;
+      }
+
+      /* Quote Style for Future Note */
+      .quote-box {
+        background: #3a3a3a;
+        border-left: 4px solid #00c853;
+        padding: 24px;
+        margin-top: 16px;
+        border-radius: 8px;
+      }
+
+      .quote-box p {
+        color: #e0e0e0;
+        font-style: italic;
+        font-size: 17px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        main {
+          padding: 32px;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+
+        h2 {
+          font-size: 22px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        main {
+          padding: 24px;
+        }
+
+        h1 {
+          font-size: 26px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        .intro-text {
+          font-size: 16px;
+        }
+
+        nav.main-nav ul {
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        nav.main-nav a {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="profile-card.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main data-testid="test-about-page">
+      <h1>About Me</h1>
+      <p class="intro-text">
+        Welcome to my reflection page. This is where I share my journey,
+        aspirations, and honest thoughts about my growth as a product designer
+        and developer.
+      </p>
+
+      <!-- Bio Section -->
+      <section data-testid="test-about-bio">
+        <h2>My Story</h2>
+        <p>
+          I'm Adedamola Ayesoro, a frontend developer with a passion for
+          creating intuitive, beautiful, clean and functional interface to
+          enhance user experiences. My journey into coding started during my
+          100lvl days when I discovered the powerful intersection of aesthetics
+          and functionality.
+        </p>
+        <p>
+          I'm deeply interested in frontend development. Understanding how
+          designs come to life through code has made me a more effective
+          designer and collaborator. I love bridging the gap between design and
+          development.
+        </p>
+      </section>
+
+      <!-- Goals Section -->
+      <section data-testid="test-about-goals">
+        <h2>My Goals in This Program</h2>
+        <p>
+          Joining the HNG13 internship program is a significant step in my
+          career journey. Here are the key objectives I want to achieve:
+        </p>
+        <ul>
+          <li>
+            Master modern frontend development practices, including semantic
+            HTML, accessible design patterns, and responsive layouts
+          </li>
+          <li>
+            Strengthen my JavaScript skills to create more interactive and
+            dynamic user experiences
+          </li>
+          <li>
+            Learn to write clean, maintainable, and testable code that follows
+            industry best practices
+          </li>
+          <li>
+            Develop a deeper understanding of web accessibility standards and
+            inclusive design principles
+          </li>
+          <li>
+            Build a portfolio of real-world projects that showcase my ability to
+            solve complex problems
+          </li>
+          <li>
+            Connect with fellow developers and designers to learn from their
+            experiences and perspectives
+          </li>
+          <li>
+            Gain confidence in my technical abilities to become a more versatile
+            product designer
+          </li>
+        </ul>
+      </section>
+
+      <!-- Areas of Low Confidence Section -->
+      <section data-testid="test-about-confidence">
+        <h2>Areas Where I'm Building Confidence</h2>
+        <p>
+          Growth requires honesty about our weaknesses. Here are the areas where
+          I'm actively working to improve and feel less confident:
+        </p>
+        <ul>
+          <li>
+            Advanced JavaScript concepts like closures, promises, and
+            asynchronous programming I sometimes struggle with the execution
+            flow
+          </li>
+          <li>
+            State management in complex applications knowing when and how to
+            structure data flow efficiently
+          </li>
+          <li>
+            Writing comprehensive unit tests I understand the importance but
+            need more practice implementing them
+          </li>
+          <li>
+            Backend integration and API design while I can consume APIs,
+            creating them from scratch is still intimidating
+          </li>
+          <li>
+            Performance optimization techniques identifying bottlenecks and
+            implementing solutions effectively
+          </li>
+          <li>
+            CSS animations and transitions creating smooth, professional
+            animations that enhance UX without being distracting
+          </li>
+          <li>
+            Speaking up in technical discussions I sometimes hesitate to share
+            my ideas when I'm not 100% certain
+          </li>
+        </ul>
+        <p>
+          I view these challenges as opportunities for growth. Each project and
+          task in this program is a chance to push beyond my comfort zone and
+          develop these skills.
+        </p>
+      </section>
+
+      <!-- Note to Future Self Section -->
+      <section data-testid="test-about-future-note">
+        <h2>Note to My Future Self</h2>
+        <div class="quote-box">
+          <p>Dear Future Sophie,</p>
+          <p>
+            Remember this moment the excitement mixed with nervousness, the
+            eagerness to learn, and the determination to grow. When you're
+            reading this after completing the internship, I hope you're proud of
+            how far you've come.
+          </p>
+          <p>
+            Don't forget that every expert was once a beginner. Those moments
+            when you felt stuck or frustrated? They were the moments you learned
+            the most. The challenges that seemed insurmountable at the start
+            became stepping stones to your success.
+          </p>
+          <p>
+            Stay curious, stay humble, and keep pushing yourself to learn.
+            Celebrate your wins both big and small. And remember, the goal isn't
+            perfection; it's progress.
+          </p>
+          <p>You've got this. You always did.</p>
+          <p style="margin-top: 16px">— Adedamola, October 2025</p>
+        </div>
+      </section>
+
+      <!-- Extra Thoughts Section -->
+      <section data-testid="test-about-extra">
+        <h2>Additional Reflections</h2>
+        <p>
+          This internship represents more than just a learning opportunity it's
+          a transformation point in my career. As someone who has primarily
+          focused on design, diving deeper into development feels both
+          challenging and incredibly rewarding.
+        </p>
+        <p>
+          I've learned that imposter syndrome is real, but it's also a sign that
+          I'm stepping outside my comfort zone. Every developer I admire started
+          exactly where I am now. What matters is showing up consistently,
+          asking questions without fear, and embracing failure as part of the
+          learning process.
+        </p>
+        <div class="highlight-box">
+          <p>
+            "The beautiful thing about learning is that no one can take it away
+            from you." — B.B. King
+          </p>
+        </div>
+        <p style="margin-top: 20px">
+          I'm grateful for this opportunity and excited to see where this
+          journey takes me. Here's to growth, learning, and becoming the
+          developer I aspire to be!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
